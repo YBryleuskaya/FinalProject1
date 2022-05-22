@@ -1,0 +1,56 @@
+.banner {
+  width: 100%;
+  display: flex;
+  position: relative;
+  top: 0px; }
+  .banner img {
+    width: 100%;
+    min-height: 667px; }
+  .banner .foto_banner1 {
+    flex: 1 0 100%; }
+  .banner .foto_banner2, .banner .foto_banner3 {
+    display: none; }
+  .banner .new_collection {
+    position: absolute;
+    text-align: center;
+    display: block;
+    min-width: 100%;
+    top: 50%;
+    transform: translateY(-50%); }
+  .banner h1 {
+    color: #fff;
+    font-size: 32px; }
+  .banner h1::after {
+    content: "";
+    width: 120px;
+    height: 1px;
+    border-bottom: 1px solid #fff;
+    display: block;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    position: relative; }
+  .banner p {
+    color: #fff;
+    font-size: 14px;
+    padding-top: 32px;
+    text-transform: uppercase; }
+  .banner span {
+    font-size: 20px;
+    display: inline-block;
+    transform: translate(30%); }
+  .banner a {
+    color: #fff; }
+  @media (min-width: 600px) {
+    .banner img {
+      min-width: 165px;
+      min-height: 100px; }
+    .banner .foto_banner1 {
+      flex: 1 1 33%; }
+    .banner .foto_banner2, .banner .foto_banner3 {
+      display: inline-block;
+      flex: 1 1 33%; }
+    .banner h1 {
+      font-size: 46px; }
+    .banner p {
+      font-size: 16px; } }

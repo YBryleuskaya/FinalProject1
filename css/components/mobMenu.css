@@ -1,0 +1,55 @@
+.menu .wrapMenu {
+  width: 0px;
+  height: 603px;
+  background-color: #fff;
+  opacity: 0;
+  transition: 1s;
+  top: 35px;
+  box-shadow: 5px 5px 20px;
+  position: fixed; }
+  .menu .wrapMenu .searchMob {
+    padding: 20px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: baseline; }
+    .menu .wrapMenu .searchMob .search {
+      width: 60%;
+      height: 40px;
+      border: rgba(37, 37, 37, 0.5) 0.3px solid;
+      border-radius: 20px;
+      display: inline-block; }
+    .menu .wrapMenu .searchMob .uah {
+      padding-left: 20px; }
+    .menu .wrapMenu .searchMob .close {
+      width: 40px;
+      height: 40px;
+      position: relative;
+      transform: translateY(-20px); }
+      .menu .wrapMenu .searchMob .close svg {
+        position: absolute; }
+    .menu .wrapMenu .searchMob .btn-secondary {
+      color: #252525; }
+  .menu .wrapMenu a {
+    color: #252525; }
+  .menu .wrapMenu ul {
+    padding-left: 20px;
+    padding-right: 20px; }
+    .menu .wrapMenu ul li {
+      display: block;
+      height: 60px;
+      padding-top: 20px;
+      text-align: center;
+      border-bottom: rgba(37, 37, 37, 0.5) 0.3px solid; }
+  .menu .wrapMenu .menuContact {
+    margin-top: 50px; }
+    .menu .wrapMenu .menuContact p {
+      text-align: center; }
+
+.menu .checkbox_menu:checked + .wrapMenu {
+  opacity: 1;
+  width: 85vw; }
+
+@media (min-width: 1250px) {
+  .header .menu div.checkbox_menu .wrapMenu {
+    display: none; } }

@@ -1,0 +1,54 @@
+.form{
+    margin: auto;
+    text-align: center;
+    position: relative;
+    max-width: 335px;
+    
+    h2{
+        font-size: 24px;
+        padding-bottom: 20px;
+
+    }
+    
+    input{
+        display: block;
+        width: 335px;
+        height: 40px;
+        margin-bottom: 15px;
+    }
+
+    input:first-child{
+        border: .5px solid #2525256e;
+        text-align: center;
+    }
+
+    input:last-child{
+        background-color: #E0BEA2;
+        color: #fff;
+    }
+
+    p{
+        font-size: 14px;
+        line-height: 16.44px;
+    }
+
+}
+
+@media (min-width: 640px){
+    .form{
+        max-width: 600px;
+        input{
+            width: 600px;
+            font-size: 16px;
+        }
+
+        h2{
+            font-size: 36px;
+        }
+
+        p{
+            font-size: 16px;
+            line-height: 18.78px;
+        }
+    }
+}

@@ -1,0 +1,41 @@
+main {
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 14px;
+  line-height: 19px; }
+  main h1 {
+    font-size: 18px; }
+  main p {
+    margin-bottom: 0; }
+  main .wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    main .wrapper div {
+      text-align: center;
+      margin-top: 10px; }
+      main .wrapper div p {
+        margin-bottom: 5px; }
+
+@media (min-width: 600px) {
+  main {
+    margin-left: 50px;
+    margin-right: 50px; }
+    main .wrapper {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap; }
+      main .wrapper .item {
+        margin-right: 10px; }
+      main .wrapper div {
+        text-align: center;
+        width: 165px; } }
+
+@media (min-width: 900px) {
+  main {
+    margin-left: 150px;
+    margin-right: 150px; } }
+
+@media (min-width: 1310px) {
+  main .wrapper {
+    justify-content: space-between; } }

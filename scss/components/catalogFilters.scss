@@ -1,0 +1,187 @@
+.wrapper{
+    margin: 10px 10px 50px 10px;
+        
+    .catalog{
+        min-width: 335px;
+        height: 40px;
+        background-color:#E0BEA2;
+        color: #fff;
+        text-align: center;
+        padding-top: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+
+        h1{
+            display: inline;
+        }
+        ul{
+            display: none;
+        }
+    }
+    .filters{
+        min-width: 335px;
+        border-bottom: 0.3px solid rgba(37, 37, 37, .5);
+        height: 40px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-top: 10px;
+        margin: 10px;
+        
+        .filter{
+            cursor: pointer;
+        }
+        .filterDesktop{
+            display: none;
+        }
+        p{
+            display: inline-block;
+        }
+    }
+    .clothes{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+
+        
+        .jacket{
+            display: inline-block;
+            min-height: 326px;
+            position: relative;
+            transition: .5s;
+            flex: 1 1 50% ;
+            padding: 10px;
+
+            & > div{
+                width: 100%;
+            }
+            img{
+                min-width: 100%;
+            }
+            img:hover{
+                transform: scale(1.1);
+                z-index: 1;
+            }
+            
+            .lable{ 
+                svg{
+                position: absolute;
+                right: 10px;
+                top: 10px;
+                }
+                svg:nth-child(2){
+                    transform: translate(-60%, 75%);
+                }
+            }
+            .specification{
+                padding-top: 10px;
+                    
+                p{
+                    margin: 0;
+                    padding-top: 5px;
+                    font-size: 14px;
+                    text-align: center;
+
+                    span{
+                        color: #E0BEA2;
+                    }
+                }
+                p:nth-of-type(2){
+                    font-weight: 700;
+                }
+                .sizes{
+                    text-align: center;
+                    padding-top: 10px;
+                            
+                    a{
+                        color: rgba(37, 37, 37, .5);
+                        font-size: 14px;
+                        display: inline-block;
+                        padding-right: 2px;
+                    }   
+                }
+                .colors{
+                    text-align: center;
+                }
+            }
+        }
+    }    
+}
+
+@media (min-width: 900px){
+    .wrapper{
+        margin: 30px 150px 50px 150px;
+        font-size: 16px;
+        display: grid;
+        grid-template-columns: 1fr 6fr;
+        grid-template-rows: 40px auto;
+        grid-template-areas: "catalog filters"
+                             "catalog clothes";
+        .catalog{
+            min-width: 155px;
+            min-height: 700px;
+            background-color:#fff;
+            color: #252525;
+            text-align: left;
+            padding-top: none;
+            grid-area: catalog;
+            margin-left: 0;
+    
+            h1{
+                display: block;
+                padding-bottom: 10px;
+            }
+            svg{
+                display: none;
+            }
+            ul{
+                display: block;
+                padding-left: 0;
+            }
+            li{
+                line-height: 2;
+            }
+            a{
+                color: #252525;
+            }
+        }
+        .filters{
+            border-bottom: none;
+            justify-content: left;
+            grid-area: filters;
+            margin: 0;
+
+            .filterMob{
+                display: none;
+            }
+            .filterDesktop{
+                display: block;
+            }
+            p{
+                display: inline-block;
+                margin-left: 20px;
+            }
+        }
+        .clothes{
+            grid-area: clothes;
+            margin-left: 10px;
+            
+            .jacket{
+            margin-top: 10px;
+            flex: 1 1 33% ;
+            }
+        }       
+    }
+}
+
+@media (min-width: 1430px){
+    .wrapper{
+        .clothes{
+            .jacket{
+                min-width: 305px;
+                min-height: 360px;
+                flex: 1 1 25% ;       
+            }
+        }       
+    }
+}

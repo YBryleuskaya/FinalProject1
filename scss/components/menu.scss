@@ -1,0 +1,177 @@
+$border_color: #252525;
+$text_color: #fff;
+
+header{
+    
+    width: 100%;
+}
+.header{
+    background-color: transparent;
+    height: 45px;
+    max-width: 100%;
+    margin: 20px;
+    display: grid;
+    grid-template-columns: 10% 10% 60% 10% 10%;
+    grid-template-rows: 24px;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    
+    .menu{
+        max-width: 10%;
+        transform: translateY(-8px);
+        justify-self: left;
+
+        .label{
+            height: 24px;
+            width: 34px;
+            
+            label{
+                cursor: pointer;
+            }
+        }
+        input{
+            display: none;
+        }
+        &2{
+            transform: translateY(-7px);
+        }    
+        &3{
+            transform: translateY(-14px);
+        }
+    }
+    .lang{
+        color: $text_color;
+        transform: translateY(-3px);
+        min-width: 50px;
+        padding-left: 10px;
+        
+    }
+    .btn-secondary{
+        background-color: transparent;
+        border: 0px;
+    }
+    .logo{
+        text-align: center;
+        min-width: 40%;
+        
+        .logo_desktop{
+        display: none;
+        }
+    }
+    .heart{
+        width: 15%;
+        transform: translateX(-15px);
+        justify-self: end;
+
+        svg{
+        cursor: pointer;
+        }     
+        .heart_desktop{
+        display: none;
+        }
+    }
+    .cart{
+        width: 15%;
+        justify-self: end;
+        transform: translateX(-15px);
+
+        svg{
+            cursor: pointer;
+        }
+        .cart_desktop{
+            display: none;
+        }
+    }
+    .desktop{
+        display: none;
+    }
+}
+@media (min-width: 900px){
+    .header{
+       margin: 32px 150px;            
+    }       
+}
+@media (min-width: 1250px){
+    .header{
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 5fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+        grid-template-areas: 'menu . new cat cat about logo lang money search person heart kart';
+        height: 40px;
+        .menu{
+            grid-area: menu;
+            transform: translateY(-1px);
+            justify-self: start;
+        }
+        .new{
+            grid-area: new;
+            transform: translateY(10px);
+        }
+        .catalog{
+            grid-area: cat;
+            transform: translate(10px, 10px);
+        }
+        .aboutUs{
+            grid-area: about;
+            transform: translateY(10px);
+        }
+        .logo{
+            grid-area: logo;
+            .logo_desktop{
+                display: inline-block;
+            }
+            .logo_mob{
+                display: none;
+            }
+        }
+        .lang{
+            grid-area: lang;
+            transform: translate(0px, 0px);
+        }
+        .money{
+            grid-area: money;
+            transform: translate(20px);
+        }
+        .search{
+            grid-area: search;
+            transform: translate(80px);
+        }
+        .person{
+            grid-area: person;
+            transform: translate(80px);
+        }
+        .heart{
+            grid-area: heart;
+            transform: translate(20px);
+            .heart_mob{
+                display: none;
+            }
+            .heart_desktop{
+                display: inline-block;
+            }
+        }
+        .cart{
+            grid-area: cart;
+            transform: translate(-20px,-25px);
+            .cart_desktop{
+                display: block;
+            }
+            .cart_mob{
+                display: none;
+            }
+        }
+
+        .desktop{
+            display: block;
+        
+            a{
+                color: $text_color;
+            }
+            span{
+                color: $text_color;
+            }
+            
+        }
+    }
+}

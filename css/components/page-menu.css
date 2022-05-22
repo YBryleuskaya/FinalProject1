@@ -1,0 +1,17 @@
+.header .menu {
+  transform: translateY(-5px); }
+
+.header .lang span {
+  color: #252525; }
+
+.header .new a {
+  color: #252525; }
+
+.header .aboutUs a {
+  color: #252525; }
+
+.header .money span, .header .money svg {
+  color: #252525; }
+
+.header .catalog a {
+  color: #E0BEAB; }

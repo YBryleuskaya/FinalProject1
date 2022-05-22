@@ -1,0 +1,86 @@
+@charset "UTF-8";
+.footer_wrap {
+  max-width: 375px;
+  margin: auto; }
+  .footer_wrap h3 {
+    padding-bottom: 0;
+    font-size: 20px; }
+  .footer_wrap .accordion-item button.accordion-button.collapsed {
+    padding-bottom: 5px;
+    border-bottom: #2525252a .3px solid; }
+  .footer_wrap .accordion-item button.accordion-button::after {
+    visibility: hidden; }
+  .footer_wrap .accordion-item span.accordion_first {
+    transform: translate(130%); }
+  .footer_wrap .accordion-item span.accordion_second {
+    transform: translate(140%); }
+  .footer_wrap .accordion-item span.accordion_third {
+    transform: translate(100%); }
+  .footer_wrap .accordion-item svg {
+    transform: translate(200px); }
+  .footer_wrap .accordion-item span.accordion_first ~ svg {
+    transform: translate(220px); }
+  .footer_wrap .accordion-item span.accordion_second ~ svg {
+    transform: translate(223px); }
+  .footer_wrap li {
+    line-height: 1.5; }
+    .footer_wrap li a {
+      color: #252525; }
+  .footer_wrap .contaсts {
+    width: 150px;
+    margin: auto;
+    padding-top: 20px;
+    text-align: center; }
+    .footer_wrap .contaсts p {
+      padding-bottom: 5px;
+      margin-bottom: 0;
+      font-weight: 200; }
+  .footer_wrap .footer_nav_desktop {
+    display: none; }
+
+.copy {
+  font-size: 12px;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 10px; }
+
+@media (min-width: 600px) {
+  .footer_wrap {
+    display: flex;
+    max-width: 1140px;
+    padding: 20px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 100px 100px 50px 100px; }
+    .footer_wrap .accordion {
+      display: none; }
+    .footer_wrap .footer_nav_desktop {
+      display: block; }
+    .footer_wrap .footer_nav {
+      flex: 1 1 20%;
+      margin-left: 10px; }
+      .footer_wrap .footer_nav ul {
+        padding-left: 0;
+        font-weight: 200; }
+    .footer_wrap .contaсts {
+      width: 100px;
+      margin: 0;
+      padding-top: 0;
+      text-align: left;
+      margin-left: 10px; }
+      .footer_wrap .contaсts p {
+        padding-top: 5px; } }
+
+@media (min-width: 650px) {
+  .footer_wrap {
+    margin: 100px 150px 50px 150px; } }
+
+@media (min-width: 750px) {
+  .footer_wrap {
+    margin: 100px 50px 50px 50px;
+    justify-content: space-between; } }
+
+@media (min-width: 900px) {
+  .footer_wrap {
+    margin: 100px 150px 50px 150px;
+    padding: 0; } }

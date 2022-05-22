@@ -1,0 +1,10 @@
+.breadcrumb {
+  margin-top: 65px;
+  margin-left: 20px; }
+  .breadcrumb-item, .breadcrumb a {
+    color: #252525; }
+
+@media (min-width: 900px) {
+  .breadcrumb {
+    margin-top: 75px;
+    margin-left: 150px; } }
