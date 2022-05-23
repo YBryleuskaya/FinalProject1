@@ -242,7 +242,7 @@ header {
 .header .menu {
   transform: translateY(-5px); }
 
-.header .lang span {
+.header .btn-secondary {
   color: #252525; }
 
 .header .new a {
@@ -268,105 +268,100 @@ header {
     margin-top: 75px;
     margin-left: 150px; } }
 
-section {
-  font-size: 14px;
-  margin: auto 25px; }
-  section h1 {
-    font-size: 18px; }
-  section p {
-    margin-bottom: 10px; }
-  section ul {
-    padding-left: 0; }
-  section li {
-    margin-bottom: 5px;
-    line-height: 20px; }
-  section .wrapper {
-    display: flex;
-    flex-direction: column; }
-    section .wrapper .step {
-      margin-top: 15px;
-      position: relative; }
-      section .wrapper .step .iconeOne {
-        position: absolute;
-        top: 10%; }
-      section .wrapper .step .iconeTwo {
-        position: absolute;
-        top: -3px; }
-      section .wrapper .step .iconeThree {
-        position: absolute;
-        top: 33%; }
-      section .wrapper .step .icone {
-        width: 35px; }
-        section .wrapper .step .icone .number {
-          position: absolute;
-          top: 10px;
-          left: 0px; }
-        section .wrapper .step .icone .triangleBig {
-          position: absolute;
-          left: 20.96%;
-          top: -5px; }
-      section .wrapper .step .text {
-        max-width: 340px;
-        max-height: 100px;
-        margin-left: 55px;
-        line-height: 20px; }
+h1 {
+  font-size: 18px;
+  margin-left: 20px; }
 
-@media (min-width: 600px) {
-  section {
-    margin-left: 50px;
-    margin-right: 50px; }
-    section .wrapper {
-      flex-direction: row; }
-      section .wrapper .shipping {
-        padding-left: 20px;
-        max-width: 480px; }
-        section .wrapper .shipping .payment {
-          max-width: 480px; }
-        section .wrapper .shipping .step {
-          position: relative; }
-    section .wrapperTwo {
-      display: grid;
-      grid-template-columns: repeat(3, 33%);
-      grid-template-rows: 250px; }
-      section .wrapperTwo .stepOne {
-        align-self: center;
-        padding-bottom: 0; }
-      section .wrapperTwo .stepTwo {
-        padding-left: 10px;
-        padding-bottom: 0;
-        align-self: center; }
-      section .wrapperTwo .stepThree {
-        padding-bottom: 0;
-        padding-left: 10px; }
-      section .wrapperTwo .block {
-        vertical-align: middle;
-        min-width: 150px;
-        max-width: 500px; }
-      section .wrapperTwo .blockOne {
-        max-width: 200px; }
-      section .wrapperTwo .blockTwo {
-        max-width: 160px; }
-      section .wrapperTwo .blockThree {
-        transform: translateY(20%);
-        min-width: 200px; }
-        section .wrapperTwo .blockThree .iconeThree {
-          transform: translateY(130%); } }
+h2 {
+  margin-left: 20px;
+  margin-bottom: 30px; }
+
+p {
+  margin-bottom: 10px; }
+
+ul {
+  padding-left: 0; }
+
+li {
+  margin-bottom: 5px;
+  line-height: 20px; }
+
+.wrapper {
+  margin-left: 20px; }
+  .wrapper .step .block {
+    position: relative;
+    display: flex; }
+    .wrapper .step .block .iconeOne {
+      position: absolute;
+      display: inline-block;
+      top: 0px; }
+    .wrapper .step .block .iconeTwo {
+      position: absolute;
+      top: -5px; }
+    .wrapper .step .block .iconeThree {
+      position: absolute;
+      top: 45px; }
+    .wrapper .step .block .icone {
+      max-width: 40px;
+      position: relative;
+      flex: 1 1 35px; }
+      .wrapper .step .block .icone .number {
+        position: absolute;
+        top: 11px;
+        left: 0px; }
+      .wrapper .step .block .icone .triangleBig {
+        position: absolute;
+        left: 20.96%;
+        top: -5px; }
+    .wrapper .step .block .text {
+      flex: 1 1 80%;
+      line-height: 20px;
+      max-width: 280px;
+      margin-left: 20px; }
 
 @media (min-width: 900px) {
   section {
     margin-left: 150px;
-    margin-right: 150px; } }
+    margin-right: 150px; }
+    section h1 {
+      margin-left: 0;
+      font-size: 20px; }
+    section h2 {
+      margin-top: 30px;
+      margin-left: 0; }
+    section .wrapper {
+      margin-left: 0px; }
+    section .wrapperOne {
+      display: flex;
+      justify-content: space-between; }
+      section .wrapperOne .payment {
+        max-width: 50%;
+        margin-right: 20px; } }
 
 @media (min-width: 1100px) {
   section .wrapperTwo .blockOne {
     max-width: 270px; }
   section .wrapperTwo .blockTwo {
-    max-width: 200px;
-    transform: translateY(-10%); }
-  section .wrapperTwo .blockThree {
-    transform: translateY(50%); }
-    section .wrapperTwo .blockThree .iconeThree {
-      transform: translateY(60%); } }
+    max-width: 200px; }
+  section .wrapperTwo .blockThree p {
+    width: 400px; }
+  section .wrapperOne {
+    justify-content: left; }
+    section .wrapperOne .payment {
+      margin-right: 50px; }
+  section .wrapperTwo {
+    display: flex;
+    justify-content: start; }
+    section .wrapperTwo .step {
+      margin-right: 30px;
+      margin-top: 30px;
+      align-self: center; }
+      section .wrapperTwo .step .iconeOne {
+        transform: translateY(10%); }
+      section .wrapperTwo .step .iconeTwo {
+        transform: translateY(15%); }
+      section .wrapperTwo .step .iconeThree {
+        transform: translateY(-25%); } }
 
 @media (min-width: 1255px) {
   section .wrapperTwo {
@@ -377,9 +372,7 @@ section {
     section .wrapperTwo .blockThree {
       transform: translateY(0); }
       section .wrapperTwo .blockThree p {
-        width: 400px; }
-      section .wrapperTwo .blockThree .iconeThree {
-        transform: translateY(-10%); } }
+        width: 400px; } }
 
 .footer_wrap {
   max-width: 375px;

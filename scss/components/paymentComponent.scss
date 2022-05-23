@@ -1,16 +1,16 @@
-section{
-    font-size: 14px;
-    margin: auto 25px;
-    
-    h1{
+   h1{
         font-size: 18px;
+        margin-left: 20px;
+    }
+    h2{
+        margin-left: 20px;
+        margin-bottom: 30px;
     }
     p{
         margin-bottom: 10px;
     }
     ul{
-        padding-left: 0;
-        
+        padding-left: 0;  
     }
     li{
         margin-bottom: 5px;
@@ -18,115 +18,79 @@ section{
     }
 
     .wrapper{
-        display: flex;
-        flex-direction: column;
-                
-        .step
-        {
-            margin-top: 15px;
-            position: relative;
-
-            .iconeOne{
-                position: absolute;
-                top: 10%; 
-            }
-            .iconeTwo{
-                position: absolute;
-                top: -3px; 
-            }
-            .iconeThree{
-                position: absolute;
-                top: 33%; 
-            }
-            .icone{
-            width: 35px;
-
-                .number{
-                    position: absolute;
-                    top: 10px;
-                    left: 0px;
-                }
-                .triangleBig{
-                    position: absolute;
-                    left: 20.96%;
-                    top: -5px;
-                }
-            }
-            .text{
-                max-width: 340px;
-                max-height: 100px;
-                margin-left: 55px;
-                line-height: 20px;
-            }
-        }
-    }
-}
-
-@media (min-width: 600px) {
-       
-    section{ 
-        margin-left: 50px;
-        margin-right: 50px;
-        
-        .wrapper{
-            flex-direction: row;
-        
-            .shipping{
-                padding-left: 20px;
-                max-width: 480px;
-
-                .payment{
-                    max-width: 480px;
-                }
-                .step{
-                    position: relative;
-                }
-            }
-        }
-        .wrapperTwo{
-            display: grid;
-            grid-template-columns: repeat(3, 33%);
-            grid-template-rows: 250px;
-
-            .stepOne{
-                align-self: center;
-                padding-bottom: 0; 
-            }
-            .stepTwo{
-                padding-left: 10px;
-                padding-bottom: 0;
-                align-self: center;
-            }
-            .stepThree{
-                padding-bottom: 0;
-                padding-left: 10px;
-            }
+        margin-left: 20px;
+        .step{
            .block{
-                vertical-align: middle;
-                min-width: 150px;
-                max-width: 500px;
-            }
-            .blockOne{
-                max-width: 200px;
-            }
-            .blockTwo{
-                max-width: 160px;
-            }
-            .blockThree{
-                transform: translateY(20%);
-                min-width: 200px;
+                position: relative;
+                display: flex;
+
+                .iconeOne{
+                    position: absolute;
+                    display: inline-block;
+                    top: 0px;
+                }
+                .iconeTwo{
+                    position: absolute;
+                    top: -5px; 
+                }
                 .iconeThree{
-                    transform: translateY(130%);
+                    position: absolute;
+                    top: 45px; 
+                }
+                .icone{
+                max-width: 40px;
+                position: relative;
+                flex: 1 1 35px;
+
+                    .number{
+                        position: absolute;
+                        top: 11px;
+                        left: 0px;
+                    }
+                    .triangleBig{
+                        position: absolute;
+                        left: 20.96%;
+                        top: -5px;
+                    }
+                }
+                .text{
+                    flex: 1 1 80%;
+                    line-height: 20px;
+                    max-width: 280px;
+                    margin-left: 20px;
                 }
             }
         }
     }
-}
+
+ 
 @media (min-width: 900px) {
        
     section{ 
         margin-left: 150px;
         margin-right: 150px;
+        h1{
+            margin-left: 0;
+            font-size: 20px;
+        }
+        h2{
+            margin-top: 30px;
+            margin-left: 0;
+
+        }
+        .wrapper{
+            margin-left: 0px; 
+        }
+        .wrapperOne{
+            display: flex;
+            justify-content: space-between;
+            
+            .payment{
+                max-width: 50%;
+                margin-right: 20px;
+            }
+        }
+        
     }
 }
 @media (min-width: 1100px) {
@@ -137,18 +101,41 @@ section{
                 max-width: 270px;
             }
             .blockTwo{
-                max-width: 200px;
-                transform: translateY(-10%);
+                max-width: 200px;                
             }
             .blockThree{
-                transform: translateY(50%);
+                p{
+                    width: 400px;
+                }
+            }
+        }
+        .wrapperOne{
+            justify-content: left;
+            .payment{
+                margin-right: 50px;
+            }
+        }
+        .wrapperTwo{
+            display: flex;
+            justify-content: start;
+            .step{
+                margin-right: 30px;
+                margin-top: 30px;
+                align-self: center;
+                .iconeOne{
+                    transform: translateY(10%);
+                }
+                .iconeTwo{
+                    transform: translateY(15%);
+                }
                 .iconeThree{
-                    transform: translateY(60%);
+                    transform: translateY(-25%);
                 }
             }
         }
     }
 }
+
 @media (min-width: 1255px) {   
     section{ 
         .wrapperTwo{
@@ -161,10 +148,6 @@ section{
                     transform: translateY(0);
                p{
                    width: 400px;
-                 
-               }
-               .iconeThree{
-                   transform: translateY(-10%);
                }
             }
         }

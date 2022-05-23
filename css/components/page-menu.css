@@ -1,7 +1,7 @@
 .header .menu {
   transform: translateY(-5px); }
 
-.header .lang span {
+.header .btn-secondary {
   color: #252525; }
 
 .header .new a {
