@@ -108,6 +108,10 @@
       justify-content: left;
       grid-area: filters;
       margin: 0; }
+      .wrapper .filters .btn-secondary {
+        color: #252525;
+        background-color: #fff;
+        border: none; }
       .wrapper .filters .filterMob {
         display: none; }
       .wrapper .filters .filterDesktop {

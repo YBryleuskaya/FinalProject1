@@ -25,8 +25,11 @@ main{
                 }
         }
 }
+
 @media (min-width: 600px){
     main{
+        margin-left: 0;
+        margin-right: 0;
         .wrapper{
             display: flex;
             flex-direction: row;
@@ -43,9 +46,10 @@ main{
     }
 }
 @media (min-width: 900px){
-    main{
+    section{
         margin-left: 150px;
         margin-right: 150px;
+        
         .wrapper{
             justify-content: space-around;
         }

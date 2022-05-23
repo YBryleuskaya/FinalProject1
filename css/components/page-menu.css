@@ -1,17 +1,16 @@
-.header .menu {
-  transform: translateY(-5px); }
-
-.header .btn-secondary {
-  color: #252525; }
-
-.header .new a {
-  color: #252525; }
-
-.header .aboutUs a {
-  color: #252525; }
-
-.header .money span, .header .money svg {
-  color: #252525; }
-
-.header .catalog a {
-  color: #E0BEAB; }
+.header {
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.601);
+  padding-top: 10px; }
+  .header .menu {
+    transform: translateY(-5px); }
+  .header .btn-secondary {
+    color: #252525; }
+  .header .new a {
+    color: #252525; }
+  .header .aboutUs a {
+    color: #252525; }
+  .header .money span, .header .money svg {
+    color: #252525; }
+  .header .catalog a {
+    color: #E0BEAB; }

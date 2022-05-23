@@ -25,7 +25,8 @@
       width: 40px;
       height: 40px;
       position: relative;
-      transform: translateY(-20px); }
+      transform: translateY(-20px);
+      cursor: pointer; }
       .menu .wrapMenu .searchMob .close svg {
         position: absolute; }
     .menu .wrapMenu .searchMob .btn-secondary {

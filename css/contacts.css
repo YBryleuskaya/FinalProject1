@@ -210,7 +210,8 @@ header {
       width: 40px;
       height: 40px;
       position: relative;
-      transform: translateY(-20px); }
+      transform: translateY(-20px);
+      cursor: pointer; }
       .menu .wrapMenu .searchMob .close svg {
         position: absolute; }
     .menu .wrapMenu .searchMob .btn-secondary {
@@ -239,23 +240,22 @@ header {
   .header .menu div.checkbox_menu .wrapMenu {
     display: none; } }
 
-.header .menu {
-  transform: translateY(-5px); }
-
-.header .btn-secondary {
-  color: #252525; }
-
-.header .new a {
-  color: #252525; }
-
-.header .aboutUs a {
-  color: #252525; }
-
-.header .money span, .header .money svg {
-  color: #252525; }
-
-.header .catalog a {
-  color: #E0BEAB; }
+.header {
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.601);
+  padding-top: 10px; }
+  .header .menu {
+    transform: translateY(-5px); }
+  .header .btn-secondary {
+    color: #252525; }
+  .header .new a {
+    color: #252525; }
+  .header .aboutUs a {
+    color: #252525; }
+  .header .money span, .header .money svg {
+    color: #252525; }
+  .header .catalog a {
+    color: #E0BEAB; }
 
 .breadcrumb {
   margin-top: 65px;
@@ -265,7 +265,7 @@ header {
 
 @media (min-width: 900px) {
   .breadcrumb {
-    margin-top: 75px;
+    margin-top: 85px;
     margin-left: 150px; } }
 
 .contacts {
@@ -439,3 +439,13 @@ header {
   .footer_wrap {
     margin: 100px 150px 50px 150px;
     padding: 0; } }
+
+body div a:hover {
+  color: #e0bea2;
+  cursor: pointer;
+  text-shadow: #e0bea2 2px; }
+
+body div li a:hover {
+  color: #e0bea2;
+  cursor: pointer;
+  text-shadow: #e0bea2 2px; }

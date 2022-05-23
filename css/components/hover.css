@@ -1,0 +1,9 @@
+body div a:hover {
+  color: #e0bea2;
+  cursor: pointer;
+  text-shadow: #e0bea2 2px; }
+
+body div li a:hover {
+  color: #e0bea2;
+  cursor: pointer;
+  text-shadow: #e0bea2 2px; }

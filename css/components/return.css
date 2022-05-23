@@ -18,19 +18,22 @@ main {
         margin-bottom: 5px; }
 
 @media (min-width: 600px) {
-  main .wrapper {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap; }
-    main .wrapper .item {
-      margin-right: 10px; }
-    main .wrapper div {
-      text-align: center;
-      width: 165px; } }
+  main {
+    margin-left: 0;
+    margin-right: 0; }
+    main .wrapper {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap; }
+      main .wrapper .item {
+        margin-right: 10px; }
+      main .wrapper div {
+        text-align: center;
+        width: 165px; } }
 
 @media (min-width: 900px) {
-  main {
+  section {
     margin-left: 150px;
     margin-right: 150px; }
-    main .wrapper {
+    section .wrapper {
       justify-content: space-around; } }

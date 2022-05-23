@@ -150,6 +150,11 @@
             justify-content: left;
             grid-area: filters;
             margin: 0;
+            .btn-secondary{
+                color: #252525;
+                background-color: #fff;
+                border: none;
+            }
 
             .filterMob{
                 display: none;

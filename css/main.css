@@ -210,7 +210,8 @@ header {
       width: 40px;
       height: 40px;
       position: relative;
-      transform: translateY(-20px); }
+      transform: translateY(-20px);
+      cursor: pointer; }
       .menu .wrapMenu .searchMob .close svg {
         position: absolute; }
     .menu .wrapMenu .searchMob .btn-secondary {
@@ -494,3 +495,13 @@ header {
   .footer_wrap {
     margin: 100px 150px 50px 150px;
     padding: 0; } }
+
+body div a:hover {
+  color: #e0bea2;
+  cursor: pointer;
+  text-shadow: #e0bea2 2px; }
+
+body div li a:hover {
+  color: #e0bea2;
+  cursor: pointer;
+  text-shadow: #e0bea2 2px; }
